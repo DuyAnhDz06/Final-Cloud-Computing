@@ -6,7 +6,7 @@ var logger = require('morgan')
 
 var indexRouter = require('./routes/index')
 var studentRouter = require('./routes/student')
-var lecturerRouter = require('./routes/lecturer')
+var toyshopRouter = require('./routes/toyshop')
 var apiRouter = require('./routes/api')
 
 //Lỗi cors là một chính sách của trình duyệt nhằm ngăn chặn việc truy cập tài nguyên của các domain khác khi không được phép
@@ -14,7 +14,7 @@ var cors = require('cors')
 
 var mongoose = require('mongoose')
 var url =
-    'mongodb://localhost:27017/cloud'
+    'mongodb+srv://duyanhdz:123456daica@cluster0.kqbu68q.mongodb.net/Greenwich'
 
 // var url =
 //     'mongodb+srv://codecode12345:123456789m@cluster0.ik5tvr8.mongodb.net/cloud'
@@ -48,7 +48,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', indexRouter)
 app.use('/student', studentRouter)
-app.use('/lecturer', lecturerRouter)
+app.use('/toyshop', toyshopRouter)
 app.use('/api', apiRouter)
 
 // catch 404 and forward to error handler

@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(225, 255, 249);
+  background-color: rgb(203, 240, 233);
   
    /* background-image: url("https://code24h.com/pictures/picfullsizes/2018/08/12/kgy1534042923.png"); */
 }
@@ -9,11 +9,9 @@ body {
 a {
   color: #00B7FF;
 }
-img, svg
-{
-  border-radius: 30%;
-}
+
 .btn
 {
   border-radius: 50%;
 }
+
