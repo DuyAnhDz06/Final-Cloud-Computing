@@ -10,6 +10,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
+    <style>
+        .card {
+            float: left;
+            margin-right: 10px;
+            margin-top: 40px;
+            margin-left: 80px;
+        }
+        
+    </style>
+
 </head>
 
 <body>
@@ -28,29 +39,58 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="/images/toystory.jpg" class="d-block w-50 " alt="..." />
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                <div class="container">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="/images/toystory.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 style="color:powderblue;">Duy Anh DEEP TRY</h5>
+                            <p style="color:white;">Woody is a toy cowboy and captain of
+                                Andy Davis' toys. Since the family is moving out a week before
+                                Andy's birthday, Andy gets to have an early birthday party
+                                with his friends. To uncover Andy's new gifts, the toys go on
+                                a scouting mission as the party progresses. Andy is presented
+                                with a Buzz Lightyear space police model with impressive
+                                features and Buzz quickly replaces Woody as Andy's favorite
+                                toy. Woody becomes jealous, especially when Buzz Lightyear
+                                wins over other toys. Even so, Buzz thinks of himself as a
+                                real space cop on a mission to return to his planet.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="/images/banner.jpg" class="d-block w-100" alt="..." />
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/images/toystory2.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 style="color:powderblue;">Duy Anh DEEP TRY</h5>
+                            <p style="color:white;">Woody is a toy cowboy and captain of
+                                Andy Davis' toys. Since the family is moving out a week before
+                                Andy's birthday, Andy gets to have an early birthday party
+                                with his friends. To uncover Andy's new gifts, the toys go on
+                                a scouting mission as the party progresses. Andy is presented
+                                with a Buzz Lightyear space police model with impressive
+                                features and Buzz quickly replaces Woody as Andy's favorite
+                                toy. Woody becomes jealous, especially when Buzz Lightyear
+                                wins over other toys. Even so, Buzz thinks of himself as a
+                                real space cop on a mission to return to his planet.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="..." />
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                    <div class="carousel-item">
+                        <img src="/images/toystory3.jpg" class="d-block w-100" alt="..." />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 style="color:powderblue;">Duy Anh DEEP TRY</h5>
+                            <p style="color:white;">Woody is a toy cowboy and captain of
+                                Andy Davis' toys. Since the family is moving out a week before
+                                Andy's birthday, Andy gets to have an early birthday party
+                                with his friends. To uncover Andy's new gifts, the toys go on
+                                a scouting mission as the party progresses. Andy is presented
+                                with a Buzz Lightyear space police model with impressive
+                                features and Buzz quickly replaces Woody as Andy's favorite
+                                toy. Woody becomes jealous, especially when Buzz Lightyear
+                                wins over other toys. Even so, Buzz thinks of himself as a
+                                real space cop on a mission to return to his planet.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -63,7 +103,7 @@
             </button>
         </div>
 
-        <div class="container mt-5">
+        {{! <div class="container mt-5">
             <div class="row">
                 <div class="col-md-4">
                     <img width="175" height="175" src="https://cdn-icons-png.flaticon.com/512/190/190769.png" />
@@ -91,9 +131,9 @@
                     <h3>230.000đ</h3>
                     <p><a class="btn btn-primary" href="./toyshop/notfound" role="button">View details</a></p>
                 </div>
-            </div>
+            </div> }}
 
-            <div class="row">
+            {{! <div class="row">
                 <div class="col-md-4">
                     <img width="175" height="175"
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdCUFFxq7LTN-yNJeoCgYatBklteOzqegCeJX4dqj3Cqhcy7i0bulm3nusfHLihRn79Y&usqp=CAU" />
@@ -101,18 +141,21 @@
                     <h5>Happy holidays with this Duy Anh Toy's!</h5>
                     <h5>Free Ship</h5>
                     <h3> 449.999đ</h3>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                     <p><a class="btn btn-primary" href="./toyshop/notfound" role="button">View details</a></p>
                 </div>
-{{!-- 
+
                 <div class="card" style="width: 18rem;">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdCUFFxq7LTN-yNJeoCgYatBklteOzqegCeJX4dqj3Cqhcy7i0bulm3nusfHLihRn79Y&usqp=CAU" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div> --}}
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdCUFFxq7LTN-yNJeoCgYatBklteOzqegCeJX4dqj3Cqhcy7i0bulm3nusfHLihRn79Y&usqp=CAU"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
 
                 <div class="col-md-4">
                     <img width="175" height="175"
@@ -133,8 +176,159 @@
                     <p><a class="btn btn-primary" href="./toyshop/notfound" role="button">View details</a></p>
                 </div>
             </div>
+        </div> }}
+        <br />
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet
+                        consectetur.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img width="175" height="175" src="https://cdn-icons-png.flaticon.com/512/190/190769.png" />
+
+                        </span>
+                        <h4 class="my-3">E-Commerce</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img width="175" height="175"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoSZReleiiuW0hcEmDFgL96ZDtDCcefnRMptYUjxIu_fqLLglyKOWl9i_tBr7yCAov2RU&usqp=CAU" />
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Responsive Design</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img width="175" height="175"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM4l4RmL13yeVb8G7bjPcoZKEWgm_Wsq5bYnPRhbwbkk-z4RGxUACqjGQd_f-RNL2VVJE&usqp=CAU" />
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Web Security</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+            </div>
+            <tbody class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Product</h2>
+                    <h3 class="section-subheading text-muted">A Little Love</h3>
+                </div>
+
+    {{! Details }}
+     <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
+                    src="https://homegift.vn/509-large_default/do-choi-toystory-cao-boi-woody.jpg" />
+                <h5 class="card-title">Toy 01</h5>
+                <p class="card-text">With supporting text below as a natural lead-in
+                    to additional content.</p>
+                <a class="btn btn-warning" href="./toyshop/notfound" role="button">View details</a>
+            </div>
+            </div>
+      <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
+                    src="https://homegift.vn/503-large_default/do-choi-toystory-buzz-lightyear.jpg" />
+                <h5 class="card-title">Toy 02</h5>
+                <p class="card-text">With supporting text below as a natural lead-in
+                    to additional content.</p>
+                <a class="btn btn-primary" href="./toyshop/notfound" role="button">View details</a>
+            </div>
+            </div> 
+
+      <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                
+                <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
+                    src="https://s7.orientaltrading.com/is/image/OrientalTrading/FXBanner_808/disney-toy-story-buzz-and-woody-cardboard-stand-up~13577233.jpg" />
+                <h5 class="card-title">Toy 03</h5>
+                <p class="card-text">With supporting text below as a natural lead-in
+                    to additional content.</p>
+                <a class="btn btn-danger" href="./toyshop/notfound" role="button">View details</a>
+            </div>
+            </div>
+            
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
+                    src="https://m.media-amazon.com/images/I/71h2tvbB-0L.jpg" />
+                <h5 class="card-title">Toy 04</h5>
+                <p class="card-text">With supporting text below as a natural lead-in
+                    to additional content.</p>
+                <a class="btn btn-info" href="./toyshop/notfound" role="button">View details</a>
+            </div>
         </div>
+
+             <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
+                    src="https://i.etsystatic.com/21256158/r/il/b335a4/2048451526/il_fullxfull.2048451526_6bly.jpg" />
+                <h5 class="card-title">Toy 05</h5>
+                <p class="card-text">With supporting text below as a natural lead-in
+                    to additional content.</p>
+                <a class="btn btn-success" href="./toyshop/notfound" role="button">View details</a>
+            </div>
+            </div>
+
+ <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
+                    src="https://i.pinimg.com/736x/25/ac/5b/25ac5bc43ae07d1e24fd87f90d03b4ef.jpg" />
+                <h5 class="card-title">Toy 06</h5>
+                <p class="card-text">With supporting text below as a natural lead-in
+                    to additional content.</p>
+                <a class="btn btn-secondary" href="./toyshop/notfound" role="button">View details</a>
+            </div>
+            </div>
+
+            <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
+                    src="https://i.pinimg.com/736x/25/ac/5b/25ac5bc43ae07d1e24fd87f90d03b4ef.jpg" />
+                <h5 class="card-title">Toy 07</h5>
+                <p class="card-text">With supporting text below as a natural lead-in
+                    to additional content.</p>
+                <a class="btn btn-dark" href="./toyshop/notfound" role="button">View details</a>
+            </div>
+            </div>
+
+            <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
+                    src="https://i.pinimg.com/736x/25/ac/5b/25ac5bc43ae07d1e24fd87f90d03b4ef.jpg" />
+                <h5 class="card-title">Toy 08</h5>
+                <p class="card-text">With supporting text below as a natural lead-in
+                    to additional content.</p>
+                <a class="btn btn-warning" href="./toyshop/notfound" role="button">View details</a>
+            </div>
+            </div>
+           
+        </section>
+        
     </main>
+<br>
+<br>
+
+           
+            
+            
+
+        
+ 
+    
+
 </body>
 
 </html>

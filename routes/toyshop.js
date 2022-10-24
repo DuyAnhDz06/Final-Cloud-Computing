@@ -133,4 +133,12 @@ router.get('/sort/desc', (req, res) => {
         })
 })
 
+router.get('/list', (req, res) => {
+    toyshopModel.find((err, data) => {
+        if (!err) {
+            res.render('toyshop/list', { toyshop: data, })
+        }
+    })
+})
+
 module.exports = router

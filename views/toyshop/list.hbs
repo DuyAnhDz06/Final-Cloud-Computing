@@ -1,0 +1,18 @@
+<div class="container text-center">
+   <div class="card-group">
+      <div class="row">
+         {{#each toyshop}}
+         <div class="card col-md-3 m-3">
+            <a href="/toyshop/detail/{{_id}}">
+               <img class="card-img-top mt-4" src="{{Image}}" width="159" height="170">
+               
+            </a>
+            <div class="card-body">
+               <h4 class="card-title text-success">{{Name}}</h4>
+               <p class="card-text text-danger">{{Color}}</p>
+            </div>
+         </div>
+         {{/each}}
+      </div>
+   </div>
+</div>
