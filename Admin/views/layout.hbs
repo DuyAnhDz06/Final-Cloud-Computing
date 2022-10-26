@@ -1,0 +1,279 @@
+{{!--
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Web Demo - Cloud Computing</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/147/147142.png">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="nav justify-content-center  ">
+    <h1 class="nav-link" href="/">Home</h1>
+    <h1 class="nav-link" href="/student">Student</h1>
+    <h1 class="nav-link" href="/linknaocungduoc">About</h1>
+    <h1 class="nav-link" href="https://www.gre.ac.uk/">Greenwich</h1>
+    <h1 class="nav-link" href="/api">API OK</h1>
+  </nav>
+
+
+  {{{body}}}
+  <footer>
+    <p class="alert alert-danger text-center mt-5">Cloud computing - Fall 2022</p>
+  </footer>
+</body>
+
+</html> --}}
+
+<html>
+
+
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/147/147142.png" />
+  <title>Duy Anh's Toys</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+   
+
+</head>
+
+<body>
+  <header>
+  <nav class="navbar navbar-dark fixed-top" style="background-color: brown;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8939caba-2c60-4aeb-bb20-d61b0458b178/deetr0d-4c24c9e0-0440-458d-a24d-099131dbd156.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg5MzljYWJhLTJjNjAtNGFlYi1iYjIwLWQ2MWIwNDU4YjE3OFwvZGVldHIwZC00YzI0YzllMC0wNDQwLTQ1OGQtYTI0ZC0wOTkxMzFkYmQxNTYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xdxHqWLdJHmA1gIY3QO22Q7CkYe-ZYdOHcLnYYt9WUU"
+          width="45" height="40" class="d-inline-block align-top" alt="" />
+        Duy-Anh Super Toys</a>
+
+
+       
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-danger" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Duy Anh
+            Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/toyshop/list">List Super Toy</a>
+            </li>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/toyshop/order">Order right now !</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/linknaocungduoc">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="/admin">Super Admin Page</a></li>
+                <li><a class="dropdown-item" href="/user">Super User Page</a></li>
+                <li><a class="dropdown-item" href="/toyshop">Super Toy Shop </a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="./toyshop/order">Order Now!</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </header>
+  {{!-- <header>
+    <nav class="nav justify-content-center">
+      <h1><a class="nav-link" href="/">Home</a></h1>
+      <h1><a class="nav-link" href="/student">Toys</a></h1>
+      <h1><a class="nav-link" href="/toyshop">Supper Toys</a></h1>
+      <h1><a class="nav-link" href="/linknaocungduoc">About</a></h1>
+      <h1><a class="nav-link" href="/api">API OK</a></h1>
+    </nav>
+    <!--important link source from "https://bootstrapious.com/p/bootstrap-vertical-navbar"-->
+
+    {{! render ra body của từng webpage }}
+
+  </header> --}}
+
+  {{! <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container">
+
+        <a class="navbar-brand" href="/">
+          <img src="https://cdn-icons-png.flaticon.com/512/3082/3082060.png" width="30" height="30"
+            class="d-inline-block align-top" alt="" />
+          Duy-Anh's Toy Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Toys
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/student">Duy Anh Amin Page</a>
+                <a class="dropdown-item" href="/toyshop">Supper Toys</a>
+                <a class="dropdown-item" href="/linknaocungduoc">About</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="">All pies</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="toyshop/order">Order</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header> }}
+  {{{body}}}
+  <div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <footer class="text-center text-white" style="background-color: #caced1;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Images -->
+      <section class="">
+        <div class="row">
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(27, 197, 27, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(33, 195, 43, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(18, 205, 18, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp" class="w-100" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(16, 168, 21, 0.2);"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Images -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(62, 13, 209, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white"
+        href="https://i.vietgiaitri.com/2021/5/3/cdm-che-anh-sep-phat-cau-vi-bi-loi-ra-so-sanh-voi-kha-banh-va-among-us-trong-mv-muon-roi-ma-sao-con-8be-5742685.jpg">Duy
+        Anh DZ</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+
+</html>

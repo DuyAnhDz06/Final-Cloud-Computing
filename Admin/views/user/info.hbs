@@ -1,0 +1,48 @@
+<br>
+<br>
+<br>
+<div class="row">
+   <div class="col">
+      <img class="img-thumbnail" src="{{user.image}}" width="500" >
+   </div>
+   <div class="col">
+      <table class="table table-bordered text-center mt-4">
+         <tr>
+            <th colspan="2" class="text text-bg-danger">User Information</th>
+         </tr>
+         <tr>
+            <th>Name</th>
+            <th>{{user.name}}</th>
+         </tr>
+          <tr>
+            <th>Password</th>
+            <th>Can't see the password, don't try :)) </th>
+         </tr>
+         <tr>
+            <th>Email</th>
+            <th>{{user.email}}</th>
+         </tr>
+         <tr>
+            <th>Gender</th>
+            <th>{{user.gender}}</th>
+         </tr>
+         <tr>
+            <th>Birthday</th>
+            <th>{{dateFormat user.dob "DD/MM/YYYY"}}</th>
+         </tr>
+         <tr>
+            <th>Description</th>
+            <th>{{user.description}}</th>
+         </tr>
+         <tr>
+            <th>Status</th>
+            <th>{{user.vip}}</th>
+         </tr>
+      </table>
+   </div>
+</div>
+<style>
+   .img-thumbnail{
+      border-radius: 50%;
+   }
+</style>

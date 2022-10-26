@@ -1,0 +1,44 @@
+<br>
+<br>
+<br>
+<div class="row">
+   <div class="col">
+      <img class="img-thumbnail" src="{{admin.image}}" width="500" >
+   </div>
+   <div class="col">
+      <table class="table table-bordered text-center mt-4">
+         <tr>
+            <th colspan="2" class="text text-bg-danger">Admin Information</th>
+         </tr>
+         <tr>
+            <th>Name</th>
+            <th>{{admin.name}}</th>
+         </tr>
+          <tr>
+            <th>Password</th>
+            <th>Keep looking, you'll find the password soon :)</th>
+         </tr>
+         <tr>
+            <th>Email</th>
+            <th>{{admin.email}}</th>
+         </tr>
+         <tr>
+            <th>Gender</th>
+            <th>{{admin.gender}}</th>
+         </tr>
+         <tr>
+            <th>Birthday</th>
+            <th>{{dateFormat admin.dob "DD/MM/YYYY"}}</th>
+         </tr>
+         <tr>
+            <th>Description</th>
+            <th>{{admin.description}}</th>
+         </tr>
+      </table>
+   </div>
+</div>
+<style>
+   .img-thumbnail{
+      border-radius: 50%;
+   }
+</style>

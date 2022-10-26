@@ -1,0 +1,92 @@
+<form action="/user/edit/{{user._id}}" method="post" class="card p-3 bg-light text-center">
+  <h2 class="text text-primary">Edit User</h2>
+  <div class="form-group">
+    <label class="text-success h6">User Name</label>
+    <input class="form-control" type="text" name="name" value="{{user.name}}" required minlength="3"
+      maxlength="2000" />
+  </div>
+  <div class="form-group">
+    <label class="text-success h6">User Password</label>
+    <input class="form-control" type="password" name="password" value="{{user.password}}" required minlength="3"
+      maxlength="2000" />
+  </div>
+  <div class="form-group mt-3">
+    <label class="text-success h6">User Email</label>
+    <input class="form-control" type="email" name="email" value="{{user.email}}" required minlength="3"
+      maxlength="5000" />
+
+  </div>
+
+  <div class="form-group mt-3">
+    <label class="text-success h6">User Image</label><br />
+    <img src="{{user.image}}" width="200" height="200" />
+    <input class="form-control mt-3" type="text" name="image" value="{{user.image}}" required />
+  </div>
+  <div class="form-group mt-3">
+    <label class="text-success h6">User Birthday</label>
+    <input class="form-control" type="date" name="dob" value="{{dateFormat user.dob 'YYYY-MM-DD'}}" required />
+  </div>
+  <div class="form-group mt-3">
+    <label class="text-success h6">User Year</label>
+    <select name="year" class="form-control">
+      <option value="">Select a year</option>
+      {{#equal user.year 1}}
+      <option value="1" selected>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      {{/equal}}
+      {{#equal user.year 2}}
+      <option value="1">1</option>
+      <option value="2" selected>2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      {{/equal}}
+      {{#equal user.year 3}}
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3" selected>3</option>
+      <option value="4">4</option>
+      {{/equal}}
+      {{#equal user.year 4}}
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4" selected>4</option>
+      {{/equal}}
+    </select>
+  </div>
+
+  </div>
+
+  <div class="form-group mt-3">
+    <label class="text-warning h6">User Status</label>
+    <br/>
+    Vip
+    <input type="radio" name="vip" value="VIP" /> 
+    Not Vip
+    <input type="radio" name="vip" value="NotVIP" />
+  </div>
+
+  <div class="form-group mt-3">
+    <label class="text-success h6">User Description</label>
+    <input class="form-control" type="text" name="description" value="{{user.description}}" required min="5" max="100" />
+  </div>
+
+
+     
+  </div>
+  <div class="form-group mt-3">
+    <label class="text-success h6">User Gender</label>
+    <br/>
+    Male
+    <input type="radio" name="gender" value="Male" /> Female
+    <input type="radio" name="gender" value="Female" />
+  </div>
+
+
+  <div class="form-group mt-3">
+    <input class="btn btn-primary mt-3" type="submit" value="Edit" />
+  </div>
+
+</form>
