@@ -1,39 +1,39 @@
+<br>
+<h1><span class="blue">&lt;</span>Duy Anh<span class="blue">&gt;</span> <span class="yellow">Admin Page</pan></h1>
+<h2>Created with love by <a href="/admin" target="_blank">Duy Anh Dz</a></h2>
 
-<table class="table table-bordered bg-light p-4 mt-3 mb-3 text-center">
-  
-   <tr>
-      <th colspan="1">
-         <form action="/admin/search" method="post">
-            <div class="form-group">
-               <input class="form-control" type="search" name="name" placeholder="Search by name.....">
-            </div>
-         </form>
-      </th>
-       <th colspan="5">
+<table class="container">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Date</th>
+      <th>Image</th>
+      <th></th>
+      <th>Description</th>
+      <th>Menu</th>
+   </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="5">
          <select class="form-control" onchange="window.location.href=this.value">
             <option value="">Sort by name</option>
             <option value="/admin/sort/asc">Ascending</option>
             <option value="/admin/sort/desc">Descending</option>
          </select>
       </th>
-   </tr>
-      <th class="text-primary" colspan="5">Admin List</th>
-      <th>
-         <a class="btn btn-primary" href="/admin/add">ADD</a>
-         <a class="btn btn-success" href="/admin/drop"
-            onclick="return confirm('Are you sure to drop all admin ?');">DROP</a>
+      <th colspan="1">
+         <form action="/admin/search" method="post">
+            <div class="form-group">
+               <input class="form-control" type="search" name="name" placeholder="Search by name">
+            </div>
+         </form>
       </th>
+      <th><a class="btn btn-primary" href="/admin/add">ADD</a>
+         <a class="btn btn-success" href="/admin/drop"
+            onclick="return confirm('Are you sure to drop all admin ?');">DROP</a></th>
    </tr>
-   <tr>
-      <th>Name</th>
-      <th>Gender</th>
-      <th>Date</th>
-      <th>Image</th>
-      <th>Status</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-    
    {{#each admin }}
    <tr>
       <td>{{name}}</td>
@@ -44,35 +44,133 @@
             <img src="{{image}}" width="150" height="150">
          </a>
       </td>
+      <td><span style="color: red; font-style: italic;font-weight: bold">{{vip}}</span></td>
+<td><span style="color: red; font-style: italic;font-weight: bold">{{description}}</span></td>
       <td>
-         {{#equal graduated true}}
-         <span style="color: darkgreen; font-weight: bold;">Graduated</span>
-         {{/equal}}
-         {{#equal graduated false}}
-         <span style="color: red; font-style: italic;font-weight: bold">Not Graduated</span>
-         {{/equal}}
-      </td>
-      <td>
-          <span style="color: rgb(0, 12, 179); font-style: italic;font-weight: bold">{{description}}</span>
-         {{!-- <a class="btn btn-warning" href="/admin/edit/{{_id}}">EDIT</a> --}}
-         {{!-- <a class="btn btn-danger" href="/admin/delete/{{_id}}">DELETE</a> --}}
+          
+         <a class="btn btn-warning" href="/admin/edit/{{_id}}">EDIT</a> 
+         <a class="btn btn-danger" href="/admin/delete/{{_id}}">DELETE</a>
       </td>
       
    </tr>
    {{/each}}
+  </tbody>
 </table>
 
 
 <style>
-  img, svg {
+   img, svg {
     vertical-align: middle;
     border-radius: 50%;
 }
-body{
-   background-color: rgb(255, 224, 229);
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color:#A7A1AE;
+  background-color:#1F2739;
 }
-.table-bordered>:not(caption)>*>* {
-    border-width: 0 1px;
-    background: #ffd6da;
+
+h1 {
+  font-size:3em; 
+  font-weight: 300;
+  line-height:1em;
+  text-align: center;
+  color: #4DC3FA;
+}
+
+h2 {
+  font-size:1em; 
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 2em;
+  color: #FB667A;
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FB667A;
+  text-decoration: none;
+}
+
+.blue { color: #185875; }
+.yellow { color: #FFF842; }
+
+.container th h1 {
+    font-weight: bold;
+    font-size: 1em;
+  text-align: left;
+  color: #185875;
+}
+
+.container td {
+    font-weight: normal;
+    font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+     -moz-box-shadow: 0 2px 2px -2px #0E1119;
+          box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container {
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.container td, .container th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+  padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+    background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+    background-color: #2C3446;
+}
+
+.container th {
+    background-color: #1F2739;
+}
+
+.container td:first-child { color: #FB667A; }
+
+.container tr:hover {
+   background-color: #464A52;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+     -moz-box-shadow: 0 6px 6px -6px #0E1119;
+          box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+.container td:hover {
+  background-color: #FFF842;
+  color: #403E10;
+  font-weight: bold;
+  
+  box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  
+  transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+  transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+.container td:nth-child(4),
+.container th:nth-child(4) { display: none; }
 }
 </style>

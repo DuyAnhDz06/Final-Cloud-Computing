@@ -11,34 +11,56 @@
             <th colspan="2" class="text text-bg-danger">Admin Information</th>
          </tr>
          <tr>
-            <th>Name</th>
-            <th>{{admin.name}}</th>
+            <th style="color: rgb(8, 251, 0)">Name</th>
+            <th style="color: rgb(6, 243, 255)">{{admin.name}}</th>
          </tr>
           <tr>
-            <th>Password</th>
-            <th>Keep looking, you'll find the password soon :)</th>
+            <th style="color: rgb(8, 251, 0)" >Password</th>
+            <th style="color: rgb(6, 243, 255)">Keep looking, you'll find the password soon :)</th>
          </tr>
          <tr>
-            <th>Email</th>
-            <th>{{admin.email}}</th>
+            <th style="color: rgb(8, 251, 0)">Email</th>
+            <th style="color: rgb(6, 243, 255)">{{admin.email}}</th>
          </tr>
          <tr>
-            <th>Gender</th>
-            <th>{{admin.gender}}</th>
+            <th style="color: rgb(8, 251, 0)" >Gender</th>
+            <th style="color: rgb(6, 243, 255)">{{admin.gender}}</th>
          </tr>
          <tr>
-            <th>Birthday</th>
-            <th>{{dateFormat admin.dob "DD/MM/YYYY"}}</th>
+            <th style="color: rgb(8, 251, 0)">Birthday</th>
+            <th style="color: rgb(6, 243, 255)">{{dateFormat admin.dob "DD/MM/YYYY"}}</th>
          </tr>
          <tr>
-            <th>Description</th>
-            <th>{{admin.description}}</th>
+            <th style="color: rgb(8, 251, 0)">Description</th>
+            <th style="color: rgb(6, 243, 255)">{{admin.description}}</th>
          </tr>
       </table>
    </div>
 </div>
+
 <style>
-   .img-thumbnail{
+    .img-thumbnail{
       border-radius: 50%;
    }
+  img, svg {
+    vertical-align: middle;
+    border-radius: 50%;
+}/*  
+  Table Responsive
+  ===================
+  Author: https://github.com/pablorgarcia
+ */
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color:#A7A1AE;
+  background-color:#1F2739;
+}
+
+
 </style>

@@ -141,6 +141,14 @@ router.get('/list', (req, res) => {
         }
     })
 })
+//HOme Page Customer
+router.get('/home', (req, res) => {
+    toyshopModel.find((err, data) => {
+        if (!err) {
+            res.render('toyshop/home', { toyshop: data, })
+        }
+    })
+})
 
 
 module.exports = router

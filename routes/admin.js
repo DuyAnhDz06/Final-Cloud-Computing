@@ -24,6 +24,7 @@ router.get('/', (req, res) => {
 })
 
 
+
 router.get('/delete/:id', (req, res) => {
     adminModel.findByIdAndDelete(req.params.id, (err) => {
         if (err) {
@@ -123,5 +124,7 @@ router.get('/sort/desc', (req, res) => {
             }
         })
 })
+
+
 
 module.exports = router

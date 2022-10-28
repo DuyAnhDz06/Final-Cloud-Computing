@@ -124,4 +124,14 @@ router.get('/sort/desc', (req, res) => {
         })
 })
 
+router.get('/login', (req, res) => {
+    userModel.find((err, data) => {
+        if (!err) {
+            //res.send(data)
+            //render ra trang index ở thư mục views/user
+            res.render('user/login', { user: data })
+        }
+    })
+})
+
 module.exports = router

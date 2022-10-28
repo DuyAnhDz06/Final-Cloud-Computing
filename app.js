@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index')
 var adminRouter = require('./routes/admin')
 var userRouter = require('./routes/user')
 var toyshopRouter = require('./routes/toyshop')
+var signupRouter = require('./routes/signup')
 
 
 //Lỗi cors là một chính sách của trình duyệt nhằm ngăn chặn việc truy cập tài nguyên của các domain khác khi không được phép
@@ -51,6 +52,7 @@ app.use('/', indexRouter)
 app.use('/admin', adminRouter)
 app.use('/user',userRouter)
 app.use('/toyshop', toyshopRouter)
+app.use('/signup', signupRouter)
 
 
 
@@ -70,9 +72,13 @@ app.use(function (err, req, res, next) {
     res.render('error')
 })
 
+
+
 const port = process.env.PORT || 6969
 app.listen(port, () => {
     console.log('http://localhost:6969')
 })
+
+
 
 module.exports = app

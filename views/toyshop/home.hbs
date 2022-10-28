@@ -11,10 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
     <script>document.getElementsByTagName("html")[0].className += " js";</script>
     <style>
         @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
@@ -122,7 +118,7 @@
 
         body {
             background-color: hsl(0, 0%, 100%);
-            background-color: var(--color-bg, white)
+            background-color: hsl(192deg 61% 15%);
         }
 
         article,
@@ -4505,7 +4501,7 @@
 
         body {
             background-color: hsl(192, 15%, 94%);
-            background-color: var(--cd-color-4)
+            background-color: hsl(296, 100%, 94%);
         }
 
         .cd-main h1 {
@@ -5223,16 +5219,18 @@
         }
     </style>
     <style>
-        .card {
-            float: left;
+        .card-group {
             margin-right: 10px;
             margin-top: 40px;
-            margin-left: 160px;
+            margin-left: 200px;
         }
-
-        .btn {
-            border-radius: 50%;
-        }
+        img, video, svg {
+    max-width: 100%;
+    border-radius: 50%;
+}
+.a{
+    margin-left: 40%;
+}
     </style>
 
 </head>
@@ -5240,7 +5238,7 @@
 <body>
     <br />
     <br />
-
+    <br>
     <main role="main">
 
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -5316,286 +5314,145 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        {{! <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <img width="175" height="175" src="https://cdn-icons-png.flaticon.com/512/190/190769.png" />
-                    <h2>Toy's 1</h2>
-                    <h5>Happy holidays with this Duy Anh Toy's!</h5>
-                    <h5>Free Ship</h5>
-                    <h3> 382.000đ</h3>
-                    <p><a class="btn btn-primary" href="./toyshop/notfound" role="button">View details</a></p>
-                </div>
-                <div class="col-md-4">
-                    <img width="175" height="175"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoSZReleiiuW0hcEmDFgL96ZDtDCcefnRMptYUjxIu_fqLLglyKOWl9i_tBr7yCAov2RU&usqp=CAU" />
-                    <h2>Toy's 2</h2>
-                    <h5>Happy holidays with this Duy Anh Toy's!</h5>
-                    <h5>Free Ship</h5>
-                    <h3> 283.000đ</h3>
-                    <p><a class="btn btn-primary" href="./toyshop/notfound" role="button">View details</a></p>
-                </div>
-                <div class="col-md-4">
-                    <img width="175" height="175"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD_Dh-fjICnK5ewO5bGbIUiad9c_OV_RjNZR1zUmRB1ICQ_fxaEzbqmvXXABxqunUh1do&usqp=CAU" />
-                    <h2>Toy's 3</h2>
-                    <h5>Happy holidays with this Duy Anh Toy's!</h5>
-                    <h5>Free Ship</h5>
-                    <h3>230.000đ</h3>
-                    <p><a class="btn btn-primary" href="./toyshop/notfound" role="button">View details</a></p>
-                </div>
-            </div> }}
-
-            {{! <div class="row">
-                <div class="col-md-4">
-                    <img width="175" height="175"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdCUFFxq7LTN-yNJeoCgYatBklteOzqegCeJX4dqj3Cqhcy7i0bulm3nusfHLihRn79Y&usqp=CAU" />
-                    <h2>Toy's 4</h2>
-                    <h5>Happy holidays with this Duy Anh Toy's!</h5>
-                    <h5>Free Ship</h5>
-                    <h3> 449.999đ</h3>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <p><a class="btn btn-primary" href="./toyshop/notfound" role="button">View details</a></p>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzdCUFFxq7LTN-yNJeoCgYatBklteOzqegCeJX4dqj3Cqhcy7i0bulm3nusfHLihRn79Y&usqp=CAU"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <img width="175" height="175"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAQxU5-yXfJXH9LDaMwg1dDnLfqeEhTZk8eW3KlmAUj9QRWIN8LGR6fFTPH7nxhSHUVGw&usqp=CAU" />
-                    <h2>Toy's 5</h2>
-                    <h5>Happy holidays with this Duy Anh Toy's!</h5>
-                    <h5>Free Ship</h5>
-                    <h3>659.999đ</h3>
-                    <p><a class="btn btn-primary" href="./toyshop/notfound" role="button">You'll love it!</a></p>
-                </div>
-                <div class="col-md-4">
-                    <img width="175" height="175"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM4l4RmL13yeVb8G7bjPcoZKEWgm_Wsq5bYnPRhbwbkk-z4RGxUACqjGQd_f-RNL2VVJE&usqp=CAU" />
-                    <h2>Toy's 6</h2>
-                    <h5>Happy holidays with this Duy Anh Toy's!</h5>
-                    <h5>Free Ship</h5>
-                    <h3> 389.999d</h3>
-                    <p><a class="btn btn-primary" href="./toyshop/notfound" role="button">View details</a></p>
-                </div>
-            </div>
-        </div> }}
         <br />
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Welcome to Duy Anh's Toy Shop</h3>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet
+                        consectetur.</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <img width="175" height="175" src="https://cdn-icons-png.flaticon.com/512/3819/3819529.png" />
+                            <img width="175" height="175"
+                                src="https://cdn-icons-png.flaticon.com/512/4287/4287397.png" />
 
                         </span>
                         <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Duy</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <img width="175" height="175" src="https://cdn-icons-png.flaticon.com/512/2923/2923686.png" />
+                            <img width="175" height="175"
+                                src="https://cdn-icons-png.flaticon.com/512/3082/3082048.png" />
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Anh</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <img width="175" height="175" src="https://cdn-icons-png.flaticon.com/512/3362/3362994.png" />
+                            <img width="175" height="175"
+                                src="https://cdn-icons-png.flaticon.com/512/3081/3081315.png" />
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Super Toy</p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit.</p>
                     </div>
                 </div>
             </div>
             <tbody class="container">
-                <div class="text-center">
+               
+
+
+
+        </section>
+        {{! Details }}
+        {{!-- Admin --}}
+        <br>
+<h1  style="color:  brown; text-align: center;"> Admin Toy Unique</h1>
+<br>
+        <div class="a">
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
+                        src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.6435-9/188446845_489317402297167_699536818654471456_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=h7eQqpNYRtcAX_EsHpL&_nc_ht=scontent.fsgn2-1.fna&oh=00_AT_D80qBSYLi2O7hfz0ATzsIoVecMYgFwbCksS2Hnj1Dpg&oe=637E35C3" />
+                    <h5 class="card-title">Toy 05</h5>
+                    <p class="card-text" style="color:  rgba(62, 0, 81, 0.747) ;font-weight: bold">You will love Duy Anh's hard work! <3 </p>
+                           
+                </div>
+            </div>
+        </div>
+<br>
+ 
+        {{!-- Toy --}}
+<div class="text-center">
                     <h2 class="section-heading text-uppercase">Product</h2>
                     <h3 class="section-subheading text-muted">A Little Love</h3>
                 </div>
 
-                {{! Details }}
-                <div class="container text-center">
-                    <div class="card-group">
-                        <div class="row">
-                            {{#each toyshop}}
-                            <div class="card col-md-3 m-3">
-                                <a href="/toyshop/detail/{{_id}}">
-                                    <img class="card-img-top mt-4" src="{{Image}}" width="159" height="170">
+        <div class="container text-center">
+            <div class="card-group">
+                <div class="row">
+                    {{#each toyshop}}
+                    <div class="card col-md-3 m-3">
+                        <a href="/toyshop/detail/{{_id}}">
+                            <img class="card-img-top mt-4" src="{{Image}}" width="159" height="220">
 
-                                </a>
-                                <div class="card-body">
-                                    <h4 class="card-title text-success">{{Name}}</h4>
-                                    <p class="card-text text-danger">{{Color}}</p>
-                                    <p class="card-text text-danger">{{Description}}</p>
-
-                                </div>
-                            </div>
-                            {{/each}}
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title text-success">{{Name}}</h4>
+                            <p class="card-text text-danger">{{Color}}</p>
+                            <p class="card-text text-danger">{{Description}}</p>
+                            <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="25.99">Add To Cart</a>
                         </div>
                     </div>
+                    {{/each}}
                 </div>
+            </div>
+        </div>
 
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
-                            src="https://homegift.vn/503-large_default/do-choi-toystory-buzz-lightyear.jpg" />
-                        <h5 class="card-title">Toy 02</h5>
-                        <p class="card-text">So sweet toy !</p>
-                        <a class="btn btn-warning" href="./toyshop/notfound" role="button">View details</a>
-                        {{!-- <a class="btn btn-primary" href="./toyshop/cart" role="button">Add To Cart</a> --}}
-                        <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="25.99">Add To Cart</a>
 
+
+
+        {{!-- Add to Cart --}}
+        <div class="cd-cart cd-cart--empty js-cd-cart">
+            <a href="#0" class="cd-cart__trigger text-replace">
+                Cart
+                <ul class="cd-cart__count">
+                    <!-- cart items count -->
+                    <li>0</li>
+                    <li>0</li>
+                </ul> <!-- .cd-cart__count -->
+            </a>
+
+            <div class="cd-cart__content">
+                <div class="cd-cart__layout">
+                    <header class="cd-cart__header">
+                        <h2>Cart</h2>
+                        <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+                    </header>
+
+                    <div class="cd-cart__body">
+                        <ul>
+                            <!-- products added to the cart will be inserted here using JavaScript -->
+                        </ul>
                     </div>
+
+                    <footer class="cd-cart__footer">
+                        <a href="#0" class="cd-cart__checkout">
+                            <em>Checkout - $<span>0</span>
+                                {{!-- <svg class="icon icon--sm" viewBox="0 0 24 24"> --}}
+                                    <g fill="none" stroke="currentColor">
+                                        <line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3"
+                                            y1="12" x2="21" y2="12" />
+                                        <polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            points="15,6 21,12 15,18 " />
+                                    </g>
+                                </svg>
+                            </em>
+                        </a>
+                    </footer>
                 </div>
-
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="card-body">
-
-                        <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
-                            src="https://s7.orientaltrading.com/is/image/OrientalTrading/FXBanner_808/disney-toy-story-buzz-and-woody-cardboard-stand-up~13577233.jpg" />
-                        <h5 class="card-title">Toy 03</h5>
-                        <p class="card-text">This is Super Toy</p>
-                        <a class="btn btn-warning" href="./toyshop/notfound" role="button">View details</a>
-                        {{!-- <a class="btn btn-primary" href="./toyshop/cart" role="button">Add To Cart</a> --}}
-                        <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="35.99">Add To Cart</a>
-                    </div>
-                </div>
-
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
-                            src="https://m.media-amazon.com/images/I/71h2tvbB-0L.jpg" />
-                        <h5 class="card-title">Toy 04</h5>
-                        <p class="card-text">You will love it <3 </p>
-                                <a class="btn btn-warning" href="./toyshop/notfound" role="button">View details</a>
-                                {{!-- <a class="btn btn-primary" href="./toyshop/cart" role="button">Add To Cart</a>
-                                --}}
-                                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="22.99">Add To Cart</a>
-                    </div>
-                </div>
-
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
-                            src="https://i.etsystatic.com/21256158/r/il/b335a4/2048451526/il_fullxfull.2048451526_6bly.jpg" />
-                        <h5 class="card-title">Toy 05</h5>
-                        <p class="card-text">You will love it <3 </p>
-                                <a class="btn btn-warning" href="./toyshop/notfound" role="button">View details</a>
-                                {{!-- <a class="btn btn-primary" href="./toyshop/cart" role="button">Add To Cart</a>
-                                --}}
-                                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="69.99">Add To Cart</a>
-                    </div>
-                </div>
-
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
-                            src="https://i.pinimg.com/736x/25/ac/5b/25ac5bc43ae07d1e24fd87f90d03b4ef.jpg" />
-                        <h5 class="card-title">Toy 06</h5>
-                        <p class="card-text">You will love it <3 </p>
-                                <a class="btn btn-warning" href="./toyshop/notfound" role="button">View details</a>
-                                {{!-- <a class="btn btn-primary" href="./toyshop/cart" role="button">Add To Cart</a>
-                                --}}
-                                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="100.99">Add To
-                                    Cart</a>
-                    </div>
-                </div>
-
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
-                            src="https://i.pinimg.com/736x/25/ac/5b/25ac5bc43ae07d1e24fd87f90d03b4ef.jpg" />
-                        <h5 class="card-title">Toy 07</h5>
-                        <p class="card-text">You will love it</p>
-                        <a class="btn btn-warning" href="./toyshop/notfound" role="button">View details</a>
-                        <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="11.99">Add To Cart</a>
-                    </div>
-                </div>
-
-                {{!-- <div class="card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
-                            src="https://i.pinimg.com/736x/25/ac/5b/25ac5bc43ae07d1e24fd87f90d03b4ef.jpg" />
-                        <h5 class="card-title">Toy 08</h5>
-                        <p class="card-text">You will love it <3< /p>
-                                <a class="btn btn-warning" href="./toyshop/notfound" role="button">View details</a>
-                                <a class="btn btn-primary" href="./toyshop/cart" role="button">Add To Cart</a>
-                    </div>
-                </div>
-
-                <div class="card text-center" style="width: 18rem;">
-                    <div class="card-body">
-                        <img style="display: block; margin-left: auto; margin-right: auto;" width="175" height="175"
-                            src="https://i.pinimg.com/736x/25/ac/5b/25ac5bc43ae07d1e24fd87f90d03b4ef.jpg" />
-                        <h5 class="card-title">Toy 08</h5>
-                        <p class="card-text">You will love it <3< /p>
-                                <a class="btn btn-warning" href="./toyshop/notfound" role="button">View details</a>
-                                <a class="btn btn-primary" href="./toyshop/cart" role="button">Add To Cart</a>
-
-                    </div>
-                </div> --}}
-
-
-                {{!-- Add to Cart --}}
-                <div class="cd-cart cd-cart--empty js-cd-cart">
-                    <a href="#0" class="cd-cart__trigger text-replace">
-                        Cart
-                        <ul class="cd-cart__count">
-                            <!-- cart items count -->
-                            <li>0</li>
-                            <li>0</li>
-                        </ul> <!-- .cd-cart__count -->
-                    </a>
-
-                    <div class="cd-cart__content">
-                        <div class="cd-cart__layout">
-                            <header class="cd-cart__header">
-                                <h2>Cart</h2>
-                                <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
-                            </header>
-
-                            <div class="cd-cart__body">
-                                <ul>
-                                    <!-- products added to the cart will be inserted here using JavaScript -->
-                                </ul>
-                            </div>
-
-                            <footer class="cd-cart__footer">
-                                <a href="#0" class="cd-cart__checkout">
-                                    <em>Checkout - $<span>0</span>
-                                        {{!-- <svg class="icon icon--sm" viewBox="0 0 24 24"> --}}
-                                            <g fill="none" stroke="currentColor">
-                                                <line stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    x1="3" y1="12" x2="21" y2="12" />
-                                                <polyline stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" points="15,6 21,12 15,18 " />
-                                            </g>
-                                        </svg>
-                                    </em>
-                                </a>
-                            </footer>
-                        </div>
-                    </div> <!-- .cd-cart__content -->
-                </div> <!-- cd-cart -->
-        </section>
-
+            </div> <!-- .cd-cart__content -->
+        </div> <!-- cd-cart -->
     </main>
     <br>
     <br>
