@@ -45,7 +45,7 @@ router.post("/", (req, res) => {
     if (!err) {
     //   document.write('Signup succeed !');
       console.log('Signup succeed !')
-      res.redirect("/toyshop/list");
+      res.redirect("/toyshop/home");
     }
   });
 });
