@@ -74,9 +74,9 @@ app.use(function (err, req, res, next) {
 
 
 
-const port = process.env.PORT || 6969
+const port = process.env.PORT || 3000
 app.listen(port, () => {
-    console.log('http://localhost:6969')
+    console.log('http://localhost:3000')
 })
 
 
