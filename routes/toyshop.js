@@ -150,5 +150,26 @@ router.get('/home', (req, res) => {
     })
 })
 
+//nhận & xử lý dữ liệu từ form ADD
+router.post('/order', (req, res) => {
+    //Cách 1: dùng "save"
+    // var toyshop = new toyshopModel(req.body)
+    // toyshop.save((err) => {
+    //     if (err) {
+    //         console.log(err)
+    //     } else {
+    //         console.log("Add toyshop succeed !")
+    //         res.redirect("/toyshop")
+    //     }
+    // })
+    //Cách 2: dùng "create"
+    toyshopModel.create(req.body, (err) => {
+        if (!err) {
+            console.log('Add your product succeed !')
+            res.redirect("/toyshop/order")
+        }
+    })
+})
+
 
 module.exports = router
