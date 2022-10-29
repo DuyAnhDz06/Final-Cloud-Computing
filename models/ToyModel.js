@@ -5,6 +5,7 @@ var ToySchema = new mongoose.Schema({
     Brand: String,
     Image: String,
     Date: Date,
+    Gender: String,
     Year: Number,
     Color: String,
     Description: String,

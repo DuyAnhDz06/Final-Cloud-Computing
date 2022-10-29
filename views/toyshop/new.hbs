@@ -29,8 +29,20 @@
    </div>
    <div class="form-group mt-3">
       <label class="text-success h6">Toy  Color</label>
-      <input class="form-control" type="text" name="Color" required min=0 max=10>
+      <select name="Color" class="form-control">
+            <option value="">Dark</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Brown">Brown</option>
+            <option value="Dark">Dark</option>
+         </select>
    </div>
+
+   <div class="form-group mt-3">
+         <label class="text-success h6">FOR : </label><br>
+         Male <input type="radio" name="gender" value="Male">
+         Female <input type="radio" name="gender" value="Female">
+      </div>
    
    <div class="form-group mt-3">
       <input class="btn btn-primary mt-3" type="submit" value="Add">

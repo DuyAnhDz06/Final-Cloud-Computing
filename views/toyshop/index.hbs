@@ -6,14 +6,14 @@
   <tr>
     <th class="text-primary" colspan="5">Supper Toys List</th>
 <th colspan="1">
+      
+    </th>
+    <th>
       <form action="/toyshop/search" method="post">
         <div class="form-group">
           <input class="form-control" type="search" name="name" placeholder="Search by name..." />
         </div>
       </form>
-    </th>
-    <th>
-      
       <a class="btn btn-warning" href="/toyshop/list">List</a>
       <a class="btn btn-info" href="/toyshop/add">ADD</a>
       <a class="btn btn-dark" href="/toyshop/drop"
@@ -33,6 +33,8 @@
     <th style="color: red">Date</th>
     <th style="color: darkgreen; font-weight: bold">Image</th>
     <th style="color: #ee008b">Color</th>
+    <th style="color: #60910b">Gender Check</th>
+    
     <th style="color: purple">Description</th>
     <th style="color: #00E5EE">Menu</th>
     
@@ -48,6 +50,7 @@
     </th>
     
   </tr>
+  
   {{#each toyshop}}
   <tr>
     <td>{{Name}}</td>
@@ -59,6 +62,7 @@
       </a>
     </td>
     <td>{{Color}}</td>
+    <td>{{Gender}}</td>
     <td>{{Description}}</td>
     <td>
       <a class="btn btn-success" href="/toyshop/edit/{{_id}}">EDIT</a>
