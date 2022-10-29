@@ -1,5 +1,5 @@
 const express = require("express");
-const signupModel = require("../models/signupModel");
+const SignupModel = require("../models/SignupModel");
 const router = express.Router();
 
 
@@ -7,21 +7,21 @@ const router = express.Router();
 //URL: localhost:3000/signup
 //signup form
 router.get("/", (req, res) => {
-  signupModel.find((err, data) => {
+  SignupModel.find((err, data) => {
     if (!err) {
       //res.send(data)
       //render ra trang index ở thư mục views/signup
-      res.render("signup/index", { Signup: data });
+      res.render("signup/index", { signup: data });
     }
   });
 });
 //login form
 router.get("/login", (req, res) => {
-  signupModel.find((err, data) => {
+  SignupModel.find((err, data) => {
     if (!err) {
       //res.send(data)
       //render ra trang index ở thư mục views/signup
-      res.render("signup/login", { Signup: data });
+      res.render("signup/login", { signup: data });
     }
   });
 });
@@ -41,7 +41,7 @@ router.post("/", (req, res) => {
   //     }
   // })
   //Cách 2: dùng "create"
-  signupModel.create(req.body, (err) => {
+  SignupModel.create(req.body, (err) => {
     if (!err) {
     //   document.write('Signup succeed !');
       console.log('Signup succeed !')
