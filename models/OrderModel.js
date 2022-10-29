@@ -9,7 +9,7 @@ var orderSchema = new mongoose.Schema({
     city: String,
     state: String,
     country: String,
-    Remarks: String, //description
+    remarks: String, //description
 }, {
     versionKey: false, //optional (to remove _v: 0 when add new data)
 });

@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
     if (!err) {
       //res.send(data)
       //render ra trang index ở thư mục views/signup
-      res.render("signup/index", { signup: data });
+      res.render("signup/index", { Signup: data });
     }
   });
 });
@@ -21,7 +21,7 @@ router.get("/login", (req, res) => {
     if (!err) {
       //res.send(data)
       //render ra trang index ở thư mục views/signup
-      res.render("signup/login", { signup: data });
+      res.render("signup/login", { Signup: data });
     }
   });
 });

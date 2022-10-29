@@ -1,10 +1,10 @@
 const express = require('express')
-const adminModel = require('../models/adminModel')
+const AdminModel = require('../models/AdminModel')
 const router = express.Router()
 
 
 router.get('/drop', (req, res) => {
-    adminModel.deleteMany({}, () => {
+    AdminModel.deleteMany({}, () => {
         console.log("Delete all data succeed !")
         res.redirect('/admin')
     })
@@ -14,7 +14,7 @@ router.get('/drop', (req, res) => {
 
 //URL: localhost:3000/admin
 router.get('/', (req, res) => {
-    adminModel.find((err, data) => {
+    AdminModel.find((err, data) => {
         if (!err) {
             //res.send(data)
             //render ra trang index ở thư mục views/admin
@@ -26,7 +26,7 @@ router.get('/', (req, res) => {
 
 
 router.get('/delete/:id', (req, res) => {
-    adminModel.findByIdAndDelete(req.params.id, (err) => {
+    AdminModel.findByIdAndDelete(req.params.id, (err) => {
         if (err) {
             console.log(err)
         } else {
@@ -66,7 +66,7 @@ router.post('/add', (req, res) => {
 
 //render ra form EDIT
 router.get('/edit/:id', (req, res) => {
-    adminModel.findById(req.params.id, (err, data) => {
+    AdminModel.findById(req.params.id, (err, data) => {
         if (!err) {
             //render ra file: update.hbs (trong thư mục views/admin)
             //gửi kèm dữ liệu của object admin để load vào form edit
@@ -80,7 +80,7 @@ router.get('/edit/:id', (req, res) => {
 router.post('/edit/:id', (req, res) => {
     var id = req.params.id;
     var admin = req.body;
-    adminModel.findByIdAndUpdate(id, admin, (err) => {
+    AdminModel.findByIdAndUpdate(id, admin, (err) => {
         if (!err) {
             console.log("Update admin succeed !")
             res.redirect("/admin")
@@ -89,7 +89,7 @@ router.post('/edit/:id', (req, res) => {
 })
 
 router.get('/detail/:id', (req, res) => {
-    adminModel.findById(req.params.id, (err, admin) => {
+    AdminModel.findById(req.params.id, (err, admin) => {
         if (!err) {
             res.render('admin/info', { admin: admin })
         }
@@ -98,7 +98,7 @@ router.get('/detail/:id', (req, res) => {
 
 //search function
 router.post('/search', (req, res) => {
-    adminModel.find({ name: new RegExp(req.body.name, "i") }, (err, data) => {
+    AdminModel.find({ name: new RegExp(req.body.name, "i") }, (err, data) => {
         if (!err) {
             res.render('admin/index', { admin: data })
         }
@@ -106,7 +106,7 @@ router.post('/search', (req, res) => {
 })
 //sort function
 router.get('/sort/asc', (req, res) => {
-    adminModel.find()
+    AdminModel.find()
         .sort({ name: 1 })
         .exec((err, data) => {
             if (!err) {
@@ -116,7 +116,7 @@ router.get('/sort/asc', (req, res) => {
 })
 
 router.get('/sort/desc', (req, res) => {
-    adminModel.find()
+    AdminModel.find()
         .sort({ name: -1 })
         .exec((err, data) => {
             if (!err) {
